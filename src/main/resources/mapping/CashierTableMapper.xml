@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.CashierTableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.CashierTable">
+        <id column="id" property="id" />
+        <result column="cashier_date" property="cashierDate" />
+        <result column="cashier_type" property="cashierType" />
+        <result column="cashier_summary" property="cashierSummary" />
+        <result column="cashier_debit" property="cashierDebit" />
+        <result column=" cashier_credit" property=" cashierCredit" />
+        <result column=" cashier_balance" property=" cashierBalance" />
+        <result column="cashier_applicant" property="cashierApplicant" />
+        <result column="cashier_auditor" property="cashierAuditor" />
+        <result column="cashier_picture" property="cashierPicture" />
+        <result column="cashier_serial_number" property="cashierSerialNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, cashier_date, cashier_type, cashier_summary, cashier_debit,  cashier_credit,  cashier_balance, cashier_applicant, cashier_auditor, cashier_picture, cashier_serial_number
+    </sql>
+
+</mapper>

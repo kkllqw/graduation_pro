@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.CapitalAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.CapitalAccount">
+        <id column="id" property="id" />
+        <result column="capital_date" property="capitalDate" />
+        <result column="capital_subject_id" property="capitalSubjectId" />
+        <result column="capital_subject_name" property="capitalSubjectName" />
+        <result column="capital_debit_amount" property="capitalDebitAmount" />
+        <result column="capital_crebit_amount" property="capitalCrebitAmount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, capital_date, capital_subject_id, capital_subject_name, capital_debit_amount, capital_crebit_amount
+    </sql>
+
+</mapper>

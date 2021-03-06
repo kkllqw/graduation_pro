@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.GainAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.GainAccount">
+        <id column="id" property="id" />
+        <result column="gain_date" property="gainDate" />
+        <result column="gain_balance" property="gainBalance" />
+        <result column="gain_gross_debt" property="gainGrossDebt" />
+        <result column="gain" property="gain" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, gain_date, gain_balance, gain_gross_debt, gain
+    </sql>
+
+</mapper>

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rd?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/mapping/*Mapper.xml   #mapper配置文件的位置
+  type-aliases-package: com.jxy.graduation_pro.entity  #所有实体类的类名就是别名（别名和类名相同）
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #控制台打印执行的sql语句

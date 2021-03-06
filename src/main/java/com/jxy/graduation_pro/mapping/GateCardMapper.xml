@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.GateCardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.GateCard">
+        <id column="user_id" property="userId" />
+        <result column="attendance_day" property="attendanceDay" />
+        <result column="later_number" property="laterNumber" />
+        <result column="total_overtime_hours" property="totalOvertimeHours" />
+        <result column="total_adjustment_hours" property="totalAdjustmentHours" />
+        <result column="total_leave_hours" property="totalLeaveHours" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, attendance_day, later_number, total_overtime_hours, total_adjustment_hours, total_leave_hours
+    </sql>
+
+</mapper>

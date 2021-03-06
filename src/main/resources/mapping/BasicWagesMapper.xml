@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.BasicWagesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.BasicWages">
+        <id column="id" property="id" />
+        <result column="user_name" property="userName" />
+        <result column="dept_id" property="deptId" />
+        <result column="basic_salary" property="basicSalary" />
+        <result column="basic_status" property="basicStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_name, dept_id, basic_salary, basic_status
+    </sql>
+
+</mapper>

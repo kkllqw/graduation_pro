@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.CredenceTableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.CredenceTable">
+        <id column="id" property="id" />
+        <result column="credence_date" property="credenceDate" />
+        <result column="credence_type" property="credenceType" />
+        <result column="credence_subject_id" property="credenceSubjectId" />
+        <result column="credence_subject_name" property="credenceSubjectName" />
+        <result column="credence_summer" property="credenceSummer" />
+        <result column="credence_debit" property="credenceDebit" />
+        <result column="credence_credit" property="credenceCredit" />
+        <result column="credence_applicant" property="credenceApplicant" />
+        <result column="credence_auditor" property="credenceAuditor" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, credence_date, credence_type, credence_subject_id, credence_subject_name, credence_summer, credence_debit, credence_credit, credence_applicant, credence_auditor
+    </sql>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jxy.graduation_pro.mapper.RealWagesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jxy.graduation_pro.entity.RealWages">
+        <id column="id" property="id" />
+        <result column="user_name" property="userName" />
+        <result column="dept_id" property="deptId" />
+        <result column="basic_salary" property="basicSalary" />
+        <result column="real_overtime_benefitsr" property="realOvertimeBenefitsr" />
+        <result column="real_reward" property="realReward" />
+        <result column="real_time_dedution" property="realTimeDedution" />
+        <result column="real_tax_paybale" property="realTaxPaybale" />
+        <result column="real_net_payroll" property="realNetPayroll" />
+        <result column="real_time" property="realTime" />
+        <result column="real_active" property="realActive" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_name, dept_id, basic_salary, real_overtime_benefitsr, real_reward, real_time_dedution, real_tax_paybale, real_net_payroll, real_time, real_active
+    </sql>
+
+</mapper>
